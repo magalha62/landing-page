@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FixOne - Revolucione a Gestão da Sua Assistência Técnica</title>
-    <link rel="icon" type="image/png" href="assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
 </head>
 <body>
     <header class="navbar">
         <div class="container">
             <a href="#" class="logo">FixOne</a>
-            <nav>
+            <nav class="nav-menu">
                 <ul class="nav-links">
                     <li><a href="#features">Funcionalidades</a></li>
                     <li><a href="#how-it-works">Como Funciona</a></li>
@@ -22,6 +22,9 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -57,12 +60,33 @@
             <div class="container">
                 <div class="section-title">
                     <span>Fluxo de Trabalho</span>
-                    <h2>Simplificamos sua Rotina em 3 Passos</h2>
+                    <h2>Siga os Passos Para o Sucesso</h2>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-item"><div class="timeline-icon"><i class="fas fa-desktop"></i></div><div class="timeline-content"><h3>1. Instale e Ative</h3><p>Instale o FixOne em seu computador Windows. A ativação da licença é online, garantindo segurança e acesso imediato.</p></div></div>
-                    <div class="timeline-item"><div class="timeline-icon"><i class="fas fa-cogs"></i></div><div class="timeline-content"><h3>2. Cadastre e Organize</h3><p>Adicione seus produtos, clientes e informações da loja. O sistema está pronto para operar 100% offline.</p></div></div>
-                    <div class="timeline-item"><div class="timeline-icon"><i class="fas fa-rocket"></i></div><div class="timeline-content"><h3>3. Venda e Gerencie</h3><p>Use o PDV para vendas rápidas e o módulo de O.S. para os reparos. Acompanhe seu crescimento pelo Dashboard.</p></div></div>
+                <div class="footprints-path-container">
+                    <svg class="footprints-path-svg" viewBox="0 0 800 600" preserveAspectRatio="none">
+                        <path d="M 400 50 C 200 150, 600 250, 400 350 C 200 450, 600 550, 400 650" stroke="var(--primary-color)" stroke-dasharray="15" stroke-width="3" fill="none" />
+                    </svg>
+                    <div class="footprints-step step-1">
+                        <div class="footprints-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="footprints-content">
+                            <h3>1. Instale e Ative</h3>
+                            <p>Instale o FixOne em seu computador. A ativação da licença é online, garantindo segurança e acesso imediato.</p>
+                        </div>
+                    </div>
+                    <div class="footprints-step step-2">
+                        <div class="footprints-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="footprints-content">
+                            <h3>2. Cadastre e Organize</h3>
+                            <p>Adicione seus produtos, clientes e informações da loja. O sistema está pronto para operar 100% offline.</p>
+                        </div>
+                    </div>
+                    <div class="footprints-step step-3">
+                        <div class="footprints-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="footprints-content">
+                            <h3>3. Venda e Gerencie</h3>
+                            <p>Use o PDV para vendas rápidas e o módulo de O.S. para os reparos. Acompanhe seu crescimento pelo Dashboard.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,30 +112,12 @@
                     <h2>Confiança e Resultados</h2>
                 </div>
                 <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <p>"O FixOne transformou a organização da minha loja. O controle de estoque e as ordens de serviço agora são feitos em segundos!"</p>
-                        <div class="testimonial-author">
-                            <img src="assets/Pixels.png" alt="Foto do Cliente 1">
-                            <div>
-                                <h4>João Paulo</h4>
-                                <span>JP Celulares</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>"Finalmente um sistema que funciona offline! O PDV é rápido e a impressão de cupons deixou meu atendimento muito mais profissional."</p>
-                        <div class="testimonial-author">
-                            <img src="assets/cliente2.jpg" alt="Foto do Cliente 2">
-                            <div>
-                                <h4>Maria Oliveira</h4>
-                                <span>Maria Reparos Tech</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="testimonial-card"><p>"O FixOne transformou a organização da minha loja. O controle de estoque e as ordens de serviço agora são feitos em segundos!"</p><div class="testimonial-author"><img src="assets/cliente1.jpg" alt="Foto do Cliente 1"><div><h4>João Silva</h4><span>JP Celulares</span></div></div></div>
+                    <div class="testimonial-card"><p>"Finalmente um sistema que funciona offline! O PDV é rápido e a impressão de cupons deixou meu atendimento muito mais profissional."</p><div class="testimonial-author"><img src="assets/cliente2.jpg" alt="Foto do Cliente 2"><div><h4>Maria Oliveira</h4><span>Maria Reparos Tech</span></div></div></div>
                 </div>
             </div>
         </section>
-
+        
         <section id="faq" class="faq-section">
             <div class="container">
                 <div class="section-title">
@@ -119,18 +125,9 @@
                     <h2>Perguntas Frequentes</h2>
                 </div>
                 <div class="faq-accordion">
-                    <div class="faq-item">
-                        <button class="faq-question">O sistema funciona sem internet?</button>
-                        <div class="faq-answer"><p>Sim! O FixOne foi projetado para operar 100% offline. A conexão com a internet é necessária apenas para a ativação inicial da licença e para validações periódicas de segurança.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">Quais são os requisitos do computador?</button>
-                        <div class="faq-answer"><p>O sistema é muito leve e roda em qualquer computador com Windows 10 ou superior, com pelo menos 4GB de RAM.</p></div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question">O suporte técnico está incluso?</button>
-                        <div class="faq-answer"><p>Sim! Todos os planos incluem suporte técnico via WhatsApp para tirar dúvidas e ajudar com qualquer problema.</p></div>
-                    </div>
+                    <div class="faq-item"><button class="faq-question">O sistema funciona sem internet?</button><div class="faq-answer"><p>Sim! O FixOne foi projetado para operar 100% offline. A conexão com a internet é necessária apenas para a ativação inicial da licença e para validações periódicas de segurança.</p></div></div>
+                    <div class="faq-item"><button class="faq-question">Quais são os requisitos do computador?</button><div class="faq-answer"><p>O sistema é muito leve e roda em qualquer computador com Windows 10 ou superior, com pelo menos 4GB de RAM.</p></div></div>
+                    <div class="faq-item"><button class="faq-question">O suporte técnico está incluso?</button><div class="faq-answer"><p>Sim! Todos os planos incluem suporte técnico via WhatsApp para tirar dúvidas e ajudar com qualquer problema.</p></div></div>
                 </div>
             </div>
         </section>
@@ -150,7 +147,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 FixOne. Criado com ☕ por [Edinan Magalhães/FixOne]</p>
+        <p>&copy; 2025 FixOne. Criado com ☕ por [Seu Nome/Sua Marca]</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
